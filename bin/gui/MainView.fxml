@@ -3,29 +3,24 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
-   <content>
-      <VBox prefHeight="399.0" prefWidth="600.0">
-         <children>
-            <MenuBar prefHeight="28.0" prefWidth="581.0">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem fx:id="newProject" mnemonicParsing="false" onAction="#onMenuItemNewProjectAction" text="New Project" />
-                        <MenuItem fx:id="openProject" mnemonicParsing="false" onAction="#onMenuItemOpenProjectAction" text="Open Project" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem fx:id="userManual" mnemonicParsing="false" onAction="#onMenuItemUserManualAction" text="User Manual" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-         </children>
-      </VBox>
-   </content>
-</ScrollPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <MenuBar minWidth="-Infinity" prefWidth="400.0">
+        <menus>
+          <Menu fx:id="newProject" mnemonicParsing="false" onAction="#onMenuItemNewProjectAction" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New Project" />
+                  <MenuItem fx:id="openProject" mnemonicParsing="false" onAction="#onMenuItemOpenProjectAction" text="Open Project" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="userManual" mnemonicParsing="false" onAction="#onMenuItemUserManualAction" text="User Manual" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>

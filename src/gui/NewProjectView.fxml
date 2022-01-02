@@ -4,11 +4,11 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.Pane?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NewProjectController">
    <content>
       <Pane prefHeight="401.0" prefWidth="596.0">
          <children>
-            <Button layoutX="272.0" layoutY="176.0" mnemonicParsing="false" text="NewProject" />
+            <Button fx:id="btReturnMain" layoutX="272.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#onBtRetrunMainAction" text="NewProject" />
          </children>
       </Pane>
    </content>

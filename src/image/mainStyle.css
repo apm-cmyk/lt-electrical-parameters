@@ -1,0 +1,6 @@
+#stack-pane {
+	-fx-background-image:url("C:\\ProjetosJava\\ParametrosEletricosLT\\src\\image\\towerMainImage");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 500 500;
+	-fx-background-position: center center;
+}
