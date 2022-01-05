@@ -29,15 +29,18 @@ public class Main extends Application {
 		try {
 
 			stage = primaryStage;
+			
+			//icon
+			primaryStage.getIcons().add(new Image("C:\\ProjetosJava\\ParametrosEletricosLT\\src\\image\\iconTower.png"));
 
+			
 			FXMLLoader fxmlMain = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
 			Pane paneMain = fxmlMain.load();
 			Image towerMainImage = new Image("C:\\ProjetosJava\\ParametrosEletricosLT\\src\\image\\towerMainImage.jpg");
 			BackgroundImage img = new BackgroundImage(towerMainImage, BackgroundRepeat.NO_REPEAT,
 					BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
 			Background backImg = new Background(img);
-			// ImageView towerMain = new ImageView(towerMainImage);
-			// paneMain.getChildren().addAll(towerMain);
+			
 			mainScene = new Scene(paneMain);
 
 			FXMLLoader fxmlNewProject = new FXMLLoader(getClass().getResource("/gui/NewProjectView.fxml"));
@@ -74,7 +77,7 @@ public class Main extends Application {
 		switch (scene) {
 		case "btReturnMain":
 			stage.setScene(mainScene);
-			stage.setTitle("New Project - LT Electrical Parameters");
+			stage.setTitle("LT Electrical Parameters - UFF");
 			break;
 		case "newProject":
 			stage.setScene(newProjectScene);
